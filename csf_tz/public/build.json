@@ -1,5 +1,9 @@
 {
     "js/select_dialog.min.js": [
         "public/js/select_dialog.js"
+    ],
+    "js/v_page.min.js": [
+        "public/js/export_tool/export_tool.js",
+        "public/js/v_page.js"
     ]
 }
