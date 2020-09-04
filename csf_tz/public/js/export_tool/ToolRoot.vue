@@ -1,9 +1,9 @@
 <template>
         <div class="container">
-                <button class="btn btn-success" @click="get_items">Get Items</button>
-                <hr>
                 <div class="col-lg-6">
-                <ul class="list-group"><Item  v-for="item in items" :item=item :key=item.item_code></Item></ul>
+                        <button class="btn btn-success" @click="get_items">Get Items</button>
+                        <hr>
+                        <ul class="list-group"><Item  v-for="item in items" :item=item :key=item.item_code></Item></ul>
                 </div>
         </div>
 </template>
@@ -29,7 +29,6 @@
                                         price_list: "Standard Selling",
                                         item_group: "All Item Groups",
                                 }).then((res) => {
-                                        console.log(res.items);
                                         this.items = res.items
                                 })
                                 
@@ -40,6 +39,6 @@
 
 <style scoped>
         button {
-                margin: 10px;
+                margin-top: 10px;
         }
 </style>
