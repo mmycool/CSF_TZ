@@ -2,7 +2,9 @@
         <div class="container">
                 <button class="btn btn-success" @click="get_items">Get Items</button>
                 <hr>
+                <div class="col-lg-6">
                 <ul class="list-group"><Item  v-for="item in items" :item=item :key=item.item_code></Item></ul>
+                </div>
         </div>
 </template>
 
